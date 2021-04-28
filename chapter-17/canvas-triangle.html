@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Canvas Paths</title>
+    </head>
+    <body>
+
+        <canvas></canvas>
+        <script>
+            const cx = document.querySelector('canvas').getContext('2d');
+            cx.beginPath();
+            cx.moveTo(50, 10);
+            cx.lineTo(10, 70);
+            cx.lineTo(90, 70);
+            cx.fill()
+        </script>
+
+    </body>
+</html>

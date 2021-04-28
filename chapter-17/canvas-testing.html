@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>canvas testing!</title>
+    </head>
+    <body>
+        <p>Before canvas.</p>
+        <canvas width="120" height="60"></canvas>
+        <p>After canvas.</p>
+
+        <script>
+            const canvas = document.querySelector("canvas");
+            const context = canvas.getContext("2d");
+            context.fillStyle = "green";
+            context.fillRect(1, 1, 50, 50);
+            context.fillStyle = "red";
+            context.fillRect(10, 10, 100, 50);
+        </script>
+    </body>
+</html>

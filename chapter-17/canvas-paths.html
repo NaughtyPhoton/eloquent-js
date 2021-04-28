@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Canvas Paths</title>
+    </head>
+    <body>
+
+        <canvas></canvas>
+        <script>
+            const cx = document.querySelector('canvas').getContext('2d');
+            cx.beginPath();
+            for (let y = 10; y < 100; y += 10) {
+                cx.moveTo(10, y);
+                cx.lineTo(90, y);
+            }
+            cx.stroke();
+        </script>
+
+    </body>
+</html>
